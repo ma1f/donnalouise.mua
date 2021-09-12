@@ -1,0 +1,17 @@
+footer {
+  padding-top: 64px;
+  padding-bottom: 32px;
+  gap: 64px;
+}
+footer a {
+  font:600 12px/1.4 Montserrat, Tahoma, Arial, sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+@media (max-width: 767px) {
+  footer { 
+    gap: 20px;
+ }
+}

@@ -1,0 +1,63 @@
+{
+  "short_name": "donna-louise",
+  "name": "Donna Louise Makeup Artist IMA",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "type": "image/svg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./favicon.svg",
+      "type": "image/svg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#0c0b10",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#C67264",
+  "shortcuts": [
+    {
+      "name": "Donna Louise Makeup Artist",
+      "short_name": "donnalouise",
+      "description": "IMA Certified Makeup Artist",
+      "url": "/about?source=pwa",
+      "icons": [{ "src": "/favicon.svg", "sizes": "192x192" }]
+    }
+  ],
+  "description": "Donna Louise - IMA Certified makeup artist in Warwickshire region in UK",
+  "screenshots": [
+    {
+      "src": "/imgs/hero-2400.jpg",
+      "type": "image/jpg",
+      "sizes": "2400x1800"
+    },
+    {
+      "src": "/imgs/hero-2400.webp",
+      "type": "image/webp",
+      "sizes": "2400x1800"
+    },
+    {
+      "src": "/imgs/hero-1600.jpg",
+      "type": "image/jpg",
+      "sizes": "1600x1200"
+    },
+    {
+      "src": "/imgs/hero-1600.webp",
+      "type": "image/webp",
+      "sizes": "1600x1200"
+    },
+    {
+      "src": "/imgs/hero-1024.jpg",
+      "type": "image/jpg",
+      "sizes": "1024x900"
+    },
+    {
+      "src": "/imgs/hero-1024.webp",
+      "type": "image/webp",
+      "sizes": "1024x900"
+    }
+  ]
+}

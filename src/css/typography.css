@@ -1,0 +1,135 @@
+/***** typography *****/
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('/fonts/LibreBaskerville-Regular.woff2') format('woff2'),
+    url('/fonts/LibreBaskerville-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('/fonts/LibreBaskerville-Bold.woff2') format('woff2'),
+    url('/fonts/LibreBaskerville-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Light.woff2') format('woff2'),
+      url('/fonts/Montserrat-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Regular.woff2') format('woff2'),
+      url('/fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Medium.woff2') format('woff2'),
+      url('/fonts/Montserrat-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-SemiBold.woff2') format('woff2'),
+      url('/fonts/Montserrat-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-Bold.woff2') format('woff2'),
+      url('/fonts/Montserrat-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+h1{
+  font: 900 56px/67px 'Libre Baskerville', 'Georgia Pro', 'Times New Roman', serif;
+  color: var(--rose);
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 24px;
+}
+h2{
+  font: 900 42px/67px 'Libre Baskerville', 'Georgia Pro', 'Times New Roman', serif;
+  color: var(--rose);
+  margin-bottom: 12px;
+}
+h3{
+  font: 700 30px/67px 'Libre Baskerville', 'Georgia Pro', 'Times New Roman', serif;
+  color: var(--rose);
+  margin-bottom: 12px;
+}
+h4{
+  font:400 18px/1.4 Montserrat, Tahoma, Arial, sans-serif;
+}
+p {
+  margin:0 0 24px;
+}
+
+body {
+  color: rgba(255, 255, 255, 0.85);
+  font:300 16px/1.6 Montserrat, Tahoma, Arial, sans-serif;
+}
+
+blockquote { 
+  font:italic 400 30px/1.4 'Libre Baskerville', 'Georgia Pro', 'Times New Roman', serif;
+  margin: 48px 0 0;
+}
+figcaption {
+  font:600 12px/1.4 Montserrat, Tahoma, Arial, sans-serif;
+  text-align: right;
+}
+
+dl{
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 8px;
+  column-gap: 16px;
+  margin:0 0 24px;
+}
+dt {
+  text-align: right;
+  font:italic 700 18px/1.8 'Libre Baskerville', 'Georgia Pro', 'Times New Roman', serif;
+  color: var(--rose);
+}
+dd{
+  vertical-align: middle;
+
+  /* container */
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+dl.pricing dt{
+  font:600 16px/1.8 'Libre Baskerville', 'Georgia Pro', 'Times New Roman', serif;
+  color: #fff;
+  text-align: left;
+}
+dl.pricing dd{
+  font:600 18px/1.8 'Libre Baskerville', 'Georgia Pro', 'Times New Roman', serif;
+}
+
+.subtext{
+  font:600 14px/1.8 'Libre Baskerville', 'Georgia Pro', 'Times New Roman', serif;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+a{
+  color:#fff;
+  text-decoration: dashed;
+}
+a:hover{ color:var(--rose); }
