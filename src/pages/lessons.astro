@@ -1,61 +1,26 @@
 ---
-import Head from "../components/head.astro";
-import Nav from "../components/nav.astro";
-import Footer from "../components/footer.astro";
+import Page from "../layouts/page.astro";
 
 let title = "Donna Louise - IMA Certified Makeup Artist";
 let description = "Donna Louise, IMA Certified Makeup Artist";
 let url = "/lessons";
 ---
-<!doctype html>
-<html lang="en">
-<head>
-	<Head title={title} description={description} url={url} />
-</head>
-<body>
-  <div class="page flex col full-width justify">
-  	<Nav url={url} dark={true} />
-    
-    <div class="flex container gap row col-sm pad pad-b align-items-center">
-      <div class="cell">
-        <h1>Weddings</h1>
-        <p>Freelance IMA Certified (International Makeup Association) artist, operating in the Warwickshire region in the UK.</p>
-        <p>Specialising in Weddings, special occasions or personalised lessons to help take your makeup to the next level.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <h3>Pricing</h3>
-        <dl class="pricing pad">
-          <dt>Bridal Trial</dt>
-          <dd>£45</dd>
-          <dt>Bride</dt>
-          <dd>£95</dd>
-          <dt>Bridal Party</dt>
-          <dd>£45 <span class="subtext">each</span></dd>
-          <dt>Flower Girls (under 12)</dt>
-          <dd>£20 <span class="subtext">each</span></dd>
-        </dl>
-        <p class="subtext">Off peak (Mon-Thu) 20% discount for Wedding day<br/>Minimum booking of £250 during peak season (April - September)</p>
-      </div>
-      <div class="cell">
-        <img src="/imgs/wedding-1-1080h.jpg" alt="Wedding Model" class="shadow" />
-      </div>
+<Page title={title} description={description} url={url}>
+  <div class="flex container gap row col-sm pad pad-b align-items-center">
+    <div class="cell-3">
+      <h1>Lessons.</h1>
+      <p>Freelance IMA Certified (International Makeup Association) artist, operating in the Warwickshire region in the UK.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h3>Pricing</h3>
+      <dl class="pricing pad">
+        <dt>Individual</dt>
+        <dd>£60 <span class="subtext">per hour (min 2hrs)</span></dd>
+        <dt>Group</dt>
+        <dd>£240 <span class="subtext">4 hours</span></dd>
+      </dl>
     </div>
-
-    <div class="flex container wrap row col-sm gap pad pad-b justify gallery">
-      <div class="cell">
-        <img src="/imgs/wedding-1-1080h.jpg" alt="Wedding Model" class="shadow" />
-      </div>
-      <div class="cell">
-        <img src="/imgs/wedding-2-1080h.jpg" alt="Wedding Model" class="shadow" />
-      </div>
-      <div class="cell">
-        <img src="/imgs/wedding-3-1080h.jpg" alt="Wedding Model" class="shadow" />
-      </div>
-      <div class="cell">
-        <img src="/imgs/wedding-4-1080h.jpg" alt="Wedding Model" class="shadow" />
-      </div>
+    <div class="cell-2">
+      <img src="/imgs/donna-profile.jpg" alt="Donna applying makeup on model" class="shadow" />
     </div>
-
-    <Footer />
   </div>
-</body>
-</html>
+</Page>

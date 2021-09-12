@@ -1,17 +1,12 @@
 ---
-import Head from "../components/head.astro";
+import Layout from "../layouts/default.astro";
 import Nav from "../components/nav.astro";
 
 let title = "Donna Louise - IMA Certified Makeup Artist";
 let description = "Donna Louise, IMA Certified Makeup Artist";
 let url = "/";
 ---
-<!doctype html>
-<html lang="en">
-<head>
-	<Head title={title} description={description} url={url} />
-</head>
-<body>
+<Layout title={title} description={description} url={url}>
   <div class="page bg zoom"></div>
 
   <div class="page flex col full-width justify">
@@ -19,6 +14,4 @@ let url = "/";
 
     <h1 class="intro">Makeup Artist</h1>
   </div>
-
-</body>
-</html>
+</Layout>

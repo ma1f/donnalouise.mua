@@ -94,7 +94,6 @@ body {
 }
 
 
-.shadow { box-shadow: 0 0 32px #000; }
 .frame{
   padding:12px;
   border:4px solid var(--rose);

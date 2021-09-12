@@ -1,0 +1,22 @@
+---
+const { title, description, url } = Astro.props;
+
+import Head from "../components/head.astro";
+
+import '../css/style.css'
+//import '../js/app.js'
+---
+<!doctype html>
+<html lang="en">
+<head>
+	<Head title={title} description={description} url={url} />
+    <!-- <script src="../js/app.js"></script> -->
+
+    <!-- <script hoist>
+        import '../js/app.js';
+    </script> -->
+</head>
+<body>
+    <slot />
+</body>
+</html>

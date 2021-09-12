@@ -1,0 +1,16 @@
+---
+const { title, description, url } = Astro.props;
+
+import Layout from "../layouts/default.astro";
+import Nav from "../components/nav.astro";
+import Footer from "../components/footer.astro";
+---
+<Layout title={title} description={description} url={url}>
+  <div class="page flex col full-width justify">
+  	<Nav url={url} />
+
+    <slot />
+    
+    <Footer url={url} />
+  </div>
+</Layout>

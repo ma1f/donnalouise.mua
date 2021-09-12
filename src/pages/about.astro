@@ -1,43 +1,29 @@
 ---
-import Head from "../components/head.astro";
-import Nav from "../components/nav.astro";
+import Page from "../layouts/page.astro";
 import Contact from "../components/contact.astro";
-import Footer from "../components/footer.astro";
 
 let title = "Donna Louise - IMA Certified Makeup Artist";
 let description = "Donna Louise, IMA Certified Makeup Artist";
 let url = "/about";
 ---
-<!doctype html>
-<html lang="en">
-<head>
-	<Head title={title} description={description} url={url} />
-</head>
-<body>
-  <div class="page flex col full-width justify">
-  	<Nav url={url} dark={true} />
-    
-    <div class="flex container gap row col-sm pad pad-b align-items-center">
-      <div class="cell-5">
-        <h1>Hi.</h1>
-        <p>Freelance IMA Certified (International Makeup Association) artist, operating in the Warwickshire region in the UK.</p>
-        <p>Specialising in Weddings, special occasions or personalised lessons to help take your makeup to the next level.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <Contact />
-      </div>
-      <div class="cell-4">
-        <img src="/imgs/donna-profile.jpg" alt="Donna applying makeup on model" class="shadow" />
-      </div>
+<Page title={title} description={description} url={url}>
+  <div class="flex container gap row col-sm pad pad-b align-items-center">
+    <div class="cell-5">
+      <h1>Hi.</h1>
+      <p>Freelance IMA Certified (International Makeup Association) artist, operating in the Warwickshire region in the UK.</p>
+      <p>Specialising in Weddings, special occasions or personalised lessons to help take your makeup to the next level.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <Contact />
     </div>
-
-    <div class="flex container gap row col-sm pad">
-      <div class="cell">
-        <blockquote>“Amazing, Perfect makeup that lasted all day and into the night - highly recommend!”</blockquote>
-        <figcaption>Rachel Williams</figcaption>
-      </div>
+    <div class="cell-4">
+      <img src="/imgs/donna-profile.jpg" alt="Donna applying makeup on model" class="shadow" />
     </div>
-
-	<Footer />
   </div>
-</body>
-</html>
+
+  <div class="flex container gap row col-sm pad">
+    <div class="cell">
+      <blockquote>“Amazing, Perfect makeup that lasted all day and into the night - highly recommend!”</blockquote>
+      <figcaption>Rachel Williams</figcaption>
+    </div>
+  </div>
+</Page>
