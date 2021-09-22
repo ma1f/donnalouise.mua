@@ -6,7 +6,7 @@ let description = "Donna Louise, IMA Certified Makeup Artist";
 let url = "/special-occassions";
 ---
 <Page title={title} description={description} url={url}>
-  <div class="flex container gap row col-sm pad pad-b align-items-center">
+  <div class="flex container gap row col-sm gutter align-items-center">
     <div class="cell">
       <h1>Special Occassions.</h1>
       <p>Freelance IMA Certified (International Makeup Association) artist, operating in the Warwickshire region in the UK.</p>
@@ -23,7 +23,12 @@ let url = "/special-occassions";
       </dl>
     </div>
     <div class="cell">
-      <img src="/imgs/wedding-1-1080h.jpg" alt="Wedding Model" class="shadow" />
+      <picture class="modal">
+        <source type="image/webp" srcset="/photos/178694597_136913778448606_7365113640207906674_n.webp 1.5x" >
+        <source type="image/webp" srcset="/photos/178694597_136913778448606_7365113640207906674_n-500.webp 1x">
+        <source srcset="/photos/178694597_136913778448606_7365113640207906674_n.jpg 1.5x">
+        <img src="/photos/178694597_136913778448606_7365113640207906674_n-500.jpg" alt="Courtney Baldwin Wedding Shoot">
+      </picture>
     </div>
   </div>
 </Page>
