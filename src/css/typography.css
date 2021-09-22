@@ -73,9 +73,13 @@ h3{
 h4{
   font:900 24px/1.4 Montserrat, Tahoma, Arial, sans-serif;
 }
-p {
+p, ul {
   margin:0 0 24px;
 }
+p.no-margin, p:last-child {
+  margin:0;
+}
+
 
 body {
   color: rgba(255, 255, 255, 0.85);
