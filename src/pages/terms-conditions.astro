@@ -1,36 +1,99 @@
 ---
-import Head from "../components/head.astro";
-import Nav from "../components/nav.astro";
-import Footer from "../components/footer.astro";
+import Page from "../layouts/page.astro";
 
 let title = "Donna Louise - IMA Certified Makeup Artist";
 let description = "Donna Louise, IMA Certified Makeup Artist";
 let url = "/terms-conditions";
 ---
-<!doctype html>
-<html lang="en">
-<head>
-	<Head title={title} description={description} url={url} />
-</head>
-<body>
-  <div class="page flex col full-width justify">
-  	<Nav url={url} dark={true} />
-    
-    <div class="flex container gap row col-sm pad align-items-center">
-      <div class="cell">
-        <h1>Terms &amp; Conditions.</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-    </div>
+<Page title={title} description={description} url={url}>
+  <div class="flex container gap row col-sm pad pad-b align-items-center">
+    <div class="cell">
+      <h1>Terms &amp; Conditions.</h1>
+      <br/>
+      <p><a class="download" href="terms-conditions.pdf" target="_blank">Download <svg width="24" height="24" stroke="#fff" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8 17L12 21L16 17" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 12V21" stroke-linecap="round" stroke-linejoin="round"/><path d="M20.8799 18.09C21.7493 17.4786 22.4013 16.6061 22.7412 15.5991C23.0811 14.5921 23.0913 13.503 22.7703 12.4898C22.4493 11.4766 21.8138 10.5921 20.956 9.96456C20.0982 9.33703 19.0628 8.99916 17.9999 8.99999H16.7399C16.4392 7.82787 15.8764 6.73924 15.0941 5.81607C14.3117 4.89291 13.3301 4.15925 12.2231 3.67035C11.1162 3.18144 9.91278 2.95002 8.70346 2.99351C7.49414 3.037 6.31045 3.35426 5.24149 3.92142C4.17253 4.48858 3.24616 5.29084 2.53212 6.26782C1.81808 7.2448 1.33498 8.37104 1.11919 9.56174C0.903403 10.7524 0.960543 11.9766 1.28631 13.142C1.61208 14.3074 2.19799 15.3838 2.99993 16.29" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
 
-    <Footer />
+      <h4>BOOKINGS</h4>
+      <p>
+        To secure a date for a Wedding, a signed contract is required with a deposit of £50 due at the time of signing. Deposits are non-refundable (at the discretion of the makeup artist).  Dates and times for bookings will only be reserved on receipt of a signed contract and payment of deposit.
+        <br />  
+        Securing bookings for all other makeup requirements, such as bridal trials, special occasion makeup or lessons, require a signed contract and full payment of services prior to the event.
+        <br />
+        Changing of booked dates or times may only be done if the required date is available, with deposits/payments being transferable to the new date/time. If no suitable date/time is available then deposit/payments will be forfeit.
+      </p>
+      
+      <h4>BOOKING TIMES</h4>
+      <p>
+        A start time and end time will be agreed and approved by the client. Each makeup application requires a certain length of time to be finished. When reserving your date, book accordingly. Additional makeup needs outside the contract will only be performed at the discretion of the makeup artist.
+        <br />
+        All persons involved in makeup appointments need to be available at the scheduled time in order to not break the contract.  All makeup for more than one person must be at the same location and consecutive in time (no gaps in between unless agreed with the makeup artist prior to appointment).
+      </p>
+
+      <h4>SATISFACTION GUARANTEED</h4>
+      <p>
+        Makeup will be completed to client’s satisfaction, but is not to exceed allotted makeup time. Ample time is given for each makeup application upon booking.  Acceptance of completed makeup application by client is acknowledgement by client that makeup was performed to his/her satisfaction.
+      </p>
+
+      <h4>TRIAL MAKEUP</h4>
+      <p>
+        A trial makeup (consultation) is available for all wedding services. It is the clients responsibility to contact the makeup artist and book a trial 6-8 weeks prior to the Wedding date. Should you not be available to attend, please contact the makeup artist at least 3 days in advance to reschedule a trial otherwise it will be counted as a missed appointment and added to the final balance.
+      </p>
+
+      <h4>CANCELLATION</h4>
+      <p>
+        The makeup artist reserves the right to terminate this contract for any non-compliance of terms. Non-compliance deems the contract void and all monies given are non-refundable.  If a client wishes to cancel a booking within 6 months of the event, the booking is chargeable in full.  If the cancellation is more than 6 months in advance the deposit/payment will be refunded or transferred.
+        <br/>
+        If dates are moved into a new year, prices will be charged at the new years rates.
+        <br/>
+        If the makeup artist cancels at any time or is unable to perform an artist’s duties for any reason, the deposit/payments paid will be fully refunded.
+      </p>
+
+      <h4>SERVICE LOCATION AND REQUIREMENTS</h4>
+      <p>
+        Location of service for the day-of-event or trial (consultation) will be at the discretion of the client, but there are certain requirements the makeup artist needs to complete the makeup.  A ‘set-up’ table/work area needs to be made available for use by the makeup artist, with sufficient lighting necessary for services to be carried out properly.
+        <br/>
+        The makeup artist will not be held liable should any injuries occur whilst on location.
+      </p>
+
+      <h4>TRAVEL CHARGES</h4>
+      <p>
+        A travel fee of 50p per mile will be charged for all locations outside a 10 mile radius of CV47. Where parking, valet or toll fees may be incurred; the amount will be included with the final bill and due for payment on the day of the event.
+      </p>
+
+      <h4>AIRFARE &amp; ACCOMMODATIONS</h4>
+      <p>All costs for travel to a booked event are to be charged to the client. Costs may include, but are not limited to: airfare, hotel, transportation, luggage costs and parking.</p>
+
+      <h4>LIABILITY</h4>
+      <p>
+        All brushes, tools and makeup products are sanitised between every makeup application and stored in a sanitary environment. Any skin condition should be reported by the client to the makeup artist prior to application, and if need be, a sample test of makeup may be performed on the skin to test reaction. Client(s) agree to release the makeup artist from liability for any skin complications due to allergic reactions.
+      </p>
+
+      <h4>PAYMENT</h4>
+      <p>
+        The final balance for all wedding services is due the day prior to the event - no exceptions. The person(s) responsible for the entire balance of payment is the person(s) who has signed the booking contract. Acceptable forms of payment are: cash and bank transfer.
+      </p>
+
+      <h4>COVID</h4>
+      <p>
+        If a client requests to move their wedding date due to lockdown restrictions, the makeup artist will try to accommodate a new date free of charge. If the makeup artist is unavailable for the new date, the deposit and any additional monies paid will be fully refunded.
+        <br/>
+        Where weddings are legally permitted to take place even with restrictions in place, the makeup artist will try to accommodate a new date if available free of charge, however if not available then the deposit and any monies paid will not be refundable.
+        <br/>
+        If the original date is within 6 months of the date you requested to postpone and the makeup artist is unable to accommodate a new date the cancellation charge will apply.
+        <br/>
+        If dates are moved into a new year, prices will also be charged at the new years rates.
+        <br/>
+        If the makeup artist  is unable to perform makeup services due to having to self-isolate, the deposit and any monies paid will be fully refunded.
+      </p>
+ 
+      <h4>USE OF IMAGE</h4>
+      <p>
+        Unless discussed and approved prior to an event, the makeup artist may use images on her website and/or in any brochure, flyer, or other advertising medium - including any and all photographs, video, audio and other digitally or chemically stored media that is captured or recorded by the makeup artist. Client(s) agree to release any and all claims regarding use of his/her image for such purposes. Client(s) also agrees to release the name and contact information of professional photographers/videographers photographs and recordings.
+        <br/>
+        The signed agreement serves as a release to the client(s) photographer/videographer and authorizes them to release to the makeup artist any photographs/recordings to use on any promotional materials the makeup artist deems necessary.
+      </p>
+
+      <h4>AGREEMENT</h4>
+      <p>I the client hereby agree and will adhere to the terms and conditions set out above. I willingly enter into this contract between myself and the makeup artist - Donna Louise MUA.</p>
+    </div>
   </div>
-</body>
-</html>
+</Page>

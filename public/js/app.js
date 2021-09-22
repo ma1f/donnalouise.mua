@@ -1,9 +1,11 @@
 import scroll from './scroll.js';
+import modal from './modal.js';
 
 // set [data-scroll] position on html element
 // use css rules such as the following to detect scroll position
 //    html:not([data-scroll='0']){ ... }
 scroll();
+modal();
 
 let open = document.getElementsByClassName('open')[0];
 let close = document.getElementsByClassName('close')[0];

@@ -44,12 +44,4 @@
 }
 
 .shadow { box-shadow: 0 0 32px #000; }
-
-.gallery img {
-    transition: all 250ms;
-    cursor: pointer;
-}
-.gallery img:hover{
-    box-shadow: 0 0 32px #000;
-    transform: scale(1.04);
-}
+.drop-shadow{ filter: drop-shadow(0 0 12px rgba(0,0,0,0.6)); }

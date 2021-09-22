@@ -1,0 +1,79 @@
+.shadow { box-shadow: 0 0 32px #000; }
+.drop-shadow { filter: drop-shadow(0 0 12px rgba(0, 0, 0, 0.6)); }
+
+
+.modal img {
+    transition: all 250ms;
+    cursor: pointer;
+}
+.modal img:hover {
+    box-shadow: 0 0 32px #000;
+    transform: scale(1.04);
+}
+
+
+#modal {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: 10;
+    overflow: hidden;
+}
+#modal .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0c0b10 url(/imgs/bg-1024.jpg) no-repeat fixed center top/cover;
+    opacity: 0.9;
+    z-index: 11;
+}
+#modal.active { display:block; }
+body.no-scroll { overflow: hidden; }
+
+#modal-close {
+    z-index: 13;
+    position: fixed;
+    top: 16px;
+    right: 32px;
+    cursor: pointer;
+}
+#modal-close svg {
+    stroke-width: 3px;
+}
+
+#modal-description {
+    z-index: 13;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 8px 64px;
+    text-align: center;
+}
+
+#modal.active #modal-image {
+    position: relative;
+    z-index: 12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* top:0 !important;
+    left:0 !important;
+    left:0 !important; */
+    padding: 56px 24px 24px;
+}
+
+#modal.active #modal-image.animate {
+    transition: all 1s ease-in-out;
+}
+
+#modal-image img{
+    max-height: 100%;
+}

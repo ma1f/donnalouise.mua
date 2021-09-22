@@ -71,7 +71,7 @@ h3{
   margin-bottom: 12px;
 }
 h4{
-  font:400 18px/1.4 Montserrat, Tahoma, Arial, sans-serif;
+  font:900 24px/1.4 Montserrat, Tahoma, Arial, sans-serif;
 }
 p {
   margin:0 0 24px;
@@ -79,7 +79,7 @@ p {
 
 body {
   color: rgba(255, 255, 255, 0.85);
-  font:300 16px/1.6 Montserrat, Tahoma, Arial, sans-serif;
+  font:500 15px/1.6 Montserrat, Tahoma, Arial, sans-serif;
 }
 
 blockquote { 
