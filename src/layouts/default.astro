@@ -3,6 +3,7 @@ const { title, description, url } = Astro.props;
 
 import Head from "../components/head.astro";
 import Modal from "../components/modal.astro";
+import Favicons from "../components/favicons.astro";
 
 import '../css/style.css';
 import '../css/header.css';
@@ -16,6 +17,7 @@ import '../css/reset.css';
 <!doctype html>
 <html lang="en">
 <head>
+    <Favicons />
 	<Head title={title} description={description} url={url} />
 </head>
 <body>
