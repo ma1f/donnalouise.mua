@@ -32,8 +32,8 @@ export default function modal() {
     img.classList.add('shadow');
     img.classList.remove('modal');
     
-    let padding = (pos.top)+'px '+Math.max(vw-target.width-pos.left, 0)+'px '+Math.max(vh-target.height-pos.top, 0)+'px '+(pos.left)+'px'
-    image.style.padding = padding;
+    // let padding = (pos.top)+'px '+Math.max(vw-target.width-pos.left, 0)+'px '+Math.max(vh-target.height-pos.top, 0)+'px '+(pos.left)+'px'
+    // image.style.padding = padding;
 
     image.appendChild(img);
     image.classList.add('animate');
