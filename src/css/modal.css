@@ -74,7 +74,7 @@ body.no-scroll { overflow: hidden; }
 
 #modal.active #modal-image.animate {
     padding: 24px 24px 56px !important;
-    transition: all 600ms ease-in-out;
+    transition: all 400ms ease-in-out;
 }
 
 #modal-image img{
