@@ -68,12 +68,13 @@ body.no-scroll { overflow: hidden; }
     flex-direction: column;
     align-items: center;
     height: 100%;
-    padding: 40%;
+    padding: 24px 24px 56px;
     pointer-events: none;
+    opacity: 0;
 }
 
 #modal.active #modal-image.animate {
-    padding: 24px 24px 56px !important;
+    opacity: 1;
     transition: all 400ms ease-in-out;
 }
 
