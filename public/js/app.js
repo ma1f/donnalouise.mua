@@ -7,15 +7,21 @@ import modal from './modal.js';
 scroll();
 modal();
 
-let open = document.getElementsByClassName('open')[0];
-let close = document.getElementsByClassName('close')[0];
-let menu = document.getElementsByClassName('menu')[0];
+let open = document.querySelectorAll('.menu .open')[0];
+let close = document.querySelectorAll('.menu .close')[0];
+let menu = document.querySelectorAll('.menu')[0];
 
-open.addEventListener('click', () => {
+open.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    evt.stopPropagation();
+    console.log("open menu");
     menu.classList.toggle('active');
 });
 
-close.addEventListener('click', () => {
+close.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    evt.stopPropagation();
+    console.log("open menu");
     menu.classList.toggle('active');
 });
 

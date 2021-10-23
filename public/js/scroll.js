@@ -21,7 +21,10 @@ export default function scroll() {
   // Reads out the scroll position and stores it in the data attribute
   // so we can use it in our stylesheets
   const storeScroll = () => {
-    document.documentElement.dataset.scroll = window.scrollY > 64 ? "scroll" : "";
+    if(window.scrollY > 24)
+      document.documentElement.dataset.scroll = "scroll";
+    else
+      document.documentElement.removeAttribute('data-scroll');
   };
 
   // Listen for new scroll events, here we debounce our `storeScroll` function

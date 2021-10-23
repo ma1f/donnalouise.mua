@@ -3,10 +3,6 @@ export default function modal() {
     var rect = el.getBoundingClientRect(),
     scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    console.log({ top: rect.top + scrollTop, left: rect.left + scrollLeft });
-    //return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
-    console.log(scrollTop); 
-    console.log(rect.top + scrollTop); 
     return { top: parseInt(rect.top), left: parseInt(rect.left) }
   };
 
@@ -18,6 +14,10 @@ export default function modal() {
   const overlay = modal.querySelectorAll('#modal .overlay')[0];
 
   const openModal = (evt) => {
+    evt.preventDefault();
+    evt.stopPropagation();
+    console.log("open modal");
+
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
     const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
 
@@ -32,9 +32,6 @@ export default function modal() {
     img.classList.add('shadow');
     img.classList.remove('modal');
     
-    // let padding = (pos.top)+'px '+Math.max(vw-target.width-pos.left, 0)+'px '+Math.max(vh-target.height-pos.top, 0)+'px '+(pos.left)+'px'
-    // image.style.padding = padding;
-
     image.appendChild(img);
     image.classList.add('animate');
 
@@ -43,6 +40,9 @@ export default function modal() {
   };
 
   const closeModal = (evt) => {
+    evt.preventDefault();
+    evt.stopPropagation();
+    console.log("close modal");
     modal.classList.add('fade-out');
     modal.classList.remove('active');
     modal.classList.remove('fade-in');
@@ -60,6 +60,6 @@ export default function modal() {
   overlay.addEventListener('click', closeModal);
   window.addEventListener('keyup', (evt) => {
     if (evt.key === "Escape")
-      closeModal();
+      closeModal(evt);
    });
 };

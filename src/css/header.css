@@ -1,31 +1,22 @@
+.page{
+  padding-top:206px;
+}
+
+@media (max-width: 1200px) {
+  .page{
+    padding-top:120px;
+  }
+}
+
 header {
-  position: sticky;
+  position: fixed;
   top:0;
+  left:0;
+  right:0;
   padding:32px 0;
-  margin: 0 0 32px;
-  transition: all 250ms, background 0;
+  /* transition: all 250ms, background 0; */
   z-index: 1;
 }
-
-html[data-scroll]:not([data-scroll='']) header{
-  background:#0c0b10 url(/imgs/bg-1024.jpg) no-repeat fixed center top/cover;
-  padding-top:24px;
-  padding-bottom: 24px;
-  margin-bottom: 84px;
-  box-shadow: 0 -5px 3px -3px #0c0b10, 0 5px 3px -3px #0c0b10;
-}
-html[data-scroll]:not([data-scroll='']) header .logo{
-  line-height: 76px;
-}
-html[data-scroll]:not([data-scroll='']) header .logo .icon{
-  height:64px;
-  width:64px;
-}
-
-/* header.dark{
-  background: rgb(0,0,0);
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 80%, rgba(0,0,0,0) 100%);
-} */
 
 .logo {
   color: var(--rose);
@@ -33,7 +24,7 @@ html[data-scroll]:not([data-scroll='']) header .logo .icon{
   display: inline-block;
   text-decoration: none;
   filter: drop-shadow(0 0 10px #000);
-  transition: all 250ms;
+  /* transition: all 250ms; */
 }
 .logo:hover, .logo:visited { color:var(--rose); text-decoration: none; }
 
@@ -48,7 +39,6 @@ html[data-scroll]:not([data-scroll='']) header .logo .icon{
   header{
     padding-top:24px;
     padding-bottom: 24px;
-    margin-bottom: 24px;
   }
   header .logo{
     line-height: 64px;
@@ -56,10 +46,6 @@ html[data-scroll]:not([data-scroll='']) header .logo .icon{
   header .logo .icon{
     height:64px;
     width:64px;
-  }
-  
-  html[data-scroll]:not([data-scroll='']) header{
-    margin-bottom: 24px;
   }
 }
 @media (max-width: 768px) {
@@ -71,6 +57,31 @@ html[data-scroll]:not([data-scroll='']) header .logo .icon{
 @media (max-width: 360px) {
   header .logo{ line-height: 1.5; }
 }
+
+
+html[data-scroll] header{
+  background:#0c0b10 url(/imgs/bg-1024.jpg) no-repeat fixed center top/cover;
+  padding-top:24px;
+  padding-bottom:24px;
+  box-shadow: 0 -5px 3px -3px #0c0b10, 0 5px 3px -3px #0c0b10;
+}
+html[data-scroll] header .logo{
+  line-height: 64px;
+}
+html[data-scroll] header .logo .icon{
+  height:64px;
+  width:64px;
+}
+
+@media (max-width: 360px) {
+  html[data-scroll]{ 
+    padding-top:16px;
+    padding-bottom:16px;
+  }
+}
+
+
+
 
 .menu { padding: 0 0 0 20px; }
 .menu .open, .menu .close{ display:none; cursor: pointer; position: relative; z-index: 1; }

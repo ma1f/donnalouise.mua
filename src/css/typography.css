@@ -137,3 +137,4 @@ a{
   text-decoration: dashed;
 }
 a:hover{ color:var(--rose); }
+a:hover svg{ stroke:var(--rose); }
