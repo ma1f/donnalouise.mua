@@ -30,5 +30,4 @@ export default function scroll() {
   // Listen for new scroll events, here we debounce our `storeScroll` function
   document.addEventListener('scroll', debounce(storeScroll), { passive: true });
   storeScroll();
-  console.log("detecting scroll behaviour")
 };

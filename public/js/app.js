@@ -14,14 +14,12 @@ let menu = document.querySelectorAll('.menu')[0];
 open.addEventListener('click', (evt) => {
     evt.preventDefault();
     evt.stopPropagation();
-    console.log("open menu");
     menu.classList.toggle('active');
 });
 
 close.addEventListener('click', (evt) => {
     evt.preventDefault();
     evt.stopPropagation();
-    console.log("open menu");
     menu.classList.toggle('active');
 });
 

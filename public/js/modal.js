@@ -16,7 +16,6 @@ export default function modal() {
   const openModal = (evt) => {
     evt.preventDefault();
     evt.stopPropagation();
-    console.log("open modal");
 
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
     const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
@@ -42,7 +41,6 @@ export default function modal() {
   const closeModal = (evt) => {
     evt.preventDefault();
     evt.stopPropagation();
-    console.log("close modal");
     modal.classList.add('fade-out');
     modal.classList.remove('active');
     modal.classList.remove('fade-in');
