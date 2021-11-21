@@ -34,8 +34,7 @@ export default function modal() {
     image.appendChild(img);
     image.classList.add('animate');
 
-    desc.innerHTML = target.dataset.description;
- 
+    desc.innerHTML = target.dataset.description == null ? "" : target.dataset.description;
   };
 
   const closeModal = (evt) => {
