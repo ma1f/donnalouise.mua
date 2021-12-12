@@ -1,6 +1,7 @@
 # dependencies
 node_modules/
 .snowpack/
+yarn.lock
 
 # logs
 npm-debug.log*
