@@ -89,18 +89,19 @@ html[data-scroll] header .logo .icon{
 .menu .open svg { stroke:#C67264; }
 .menu .close svg { stroke:#fff; }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .menu .open, .menu.active .close { display: block; }
   .menu .close, .menu.active .open { display: none; }
 }
 
 nav { padding:3px 0 0; display:flex; align-items: center; justify-content: center; gap:30px; }
 nav a {
-  font:bold 14px/1 Montserrat, Tahoma, Arial, sans-serif;
+  font:bold 13px/1 Montserrat, Tahoma, Arial, sans-serif;
   color:var(--rose);
   text-decoration: none;
   text-transform: uppercase;
   position: relative;
+  filter: drop-shadow(0 0 4px #000);
 }
 nav a::before{
   width: 0;
@@ -120,7 +121,7 @@ nav a:hover::before, nav a:focus::before, nav a:active::before, nav a.active::be
   width: 100%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .menu nav {
     position: fixed;
     right:0;
