@@ -14,7 +14,7 @@ import '../css/typography.css';
 import '../css/layout.css';
 import '../css/reset.css';
 
-let beacon = "{'token':'46fb7e8cbece49fa83776b83e7bf0408'}";
+let beacon = '{"token": "46fb7e8cbece49fa83776b83e7bf0408"}';
 ---
 <!doctype html>
 <html lang="en">
@@ -25,6 +25,6 @@ let beacon = "{'token':'46fb7e8cbece49fa83776b83e7bf0408'}";
 <body>
     <Modal />
     <slot />
-    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{beacon}"></script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={beacon}></script>
 </body>
 </html>
