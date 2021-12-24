@@ -3,10 +3,10 @@ const { title = 'Donna Louise - IMA Certified Makeup Artist', description, url }
 ---
 <meta charset="UTF-8">
 <title>{title}</title>
-<meta name="description" content="Donna Louise, makeup artist, IMA certified, ">
+<meta name="description" content={description}>
 
 <script type="application/ld+json">
-{{
+{
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Donna Louise",
@@ -42,8 +42,10 @@ const { title = 'Donna Louise - IMA Certified Makeup Artist', description, url }
     },
     "sameAs":[
         "https://www.instagram.com/donnalouise.mua/"
-    ]
-}}
+    ],
+    "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59",
+    "priceRange":"££-£££"
+}
 </script>
 
 <!-- preload fonts -->
