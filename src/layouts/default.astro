@@ -1,10 +1,4 @@
 ---
-const { title, description, url } = Astro.props;
-
-import Head from "../components/head.astro";
-import Modal from "../components/modal.astro";
-import Favicons from "../components/favicons.astro";
-
 import '../css/style.css';
 import '../css/header.css';
 import '../css/modal.css';
@@ -14,9 +8,15 @@ import '../css/typography.css';
 import '../css/layout.css';
 import '../css/reset.css';
 
+import Head from "../components/head.astro";
+import Modal from "../components/modal.astro";
+import Favicons from "../components/favicons.astro";
+
+const { title, description, url } = Astro.props;
+
 let beacon = "{'token': '46fb7e8cbece49fa83776b83e7bf0408'}";
 ---
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <Favicons />
