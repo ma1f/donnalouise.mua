@@ -90,15 +90,19 @@ p.no-margin, p:last-child {
 
 body {
   color: rgba(255, 255, 255, 0.85);
-  font:500 15px/1.6 Montserrat, Tahoma, Arial, sans-serif;
+  font:500 14px/1.6 Montserrat, Tahoma, Arial, sans-serif;
 }
 
 blockquote { 
-  font:italic 400 30px/1.4 'Libre Baskerville', 'Georgia Pro', 'Times New Roman', serif;
+  font:italic 400 16px/1.6 'Libre Baskerville', 'Georgia Pro', 'Times New Roman', serif;
+  margin: 48px 0 0;
+}
+q{
+  font:italic 400 10px/1 'Libre Baskerville', 'Georgia Pro', 'Times New Roman', serif;
   margin: 48px 0 0;
 }
 figcaption {
-  font:600 12px/1.4 Montserrat, Tahoma, Arial, sans-serif;
+  font:600 11px/1.4 Montserrat, Tahoma, Arial, sans-serif;
   text-align: right;
 }
 

@@ -9,6 +9,7 @@
 .modal:hover {
     box-shadow: 0 0 32px #000;
     transform: scale(1.04);
+    z-index: 1;
 }
 
 

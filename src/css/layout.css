@@ -183,3 +183,5 @@
     margin-left: 0;
   } */
 }
+
+.fit{ max-width: fit-content; }
